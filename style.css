@@ -1,0 +1,170 @@
+* {
+    color: #222;
+    font-family: "M PLUS 1p", sans-serif;
+}
+
+/* 全体 */
+.main-wrapper {
+    height: 80vh;
+    width: 90%;
+    margin: 30px auto 100px;
+    padding: 10px;
+    /* border: 2px solid #9428d2; */
+}
+
+
+
+/* スタート画面 */
+.start-wrapper{
+    position: relative;
+    height: 90%;
+    margin: 20px auto;
+    border: 3px double #9428d2;
+    padding: 20px;
+    background: url(images/background/white.jpg) center center / cover;
+}
+.logo{
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    width: 640px;
+    height: 300px;
+    margin: 0 auto;
+}
+.logo__img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.start-btn{
+    position: absolute;
+    top: 65%;
+    left: 45%;
+    padding: 12px 24px;
+    font-size: 24px;
+    background: #FFF;
+    color: #ff92ed;
+    border : 3px double #ff92ed;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.start-btn:hover{
+    background: #fdc6e6;
+    color: #f1eff1;
+    border : 3px double #ff92ed;
+}
+
+
+/* ゲーム画面*/
+.game-wrapper {
+    position: relative;
+    display: none;
+    height: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 3px double #aea8dd;
+    /* background-image: url(images/background/white.jpg); */
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+/* キャラの表示部分 */
+.person-area {
+    width: 100%;
+    margin: 0px auto;
+    margin-bottom: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* キャラクター */
+.person-pic{
+    position: absolute;
+    top: 0%;
+    left: 30%;
+    width: 720px;
+    height:750px;
+    overflow: hidden;
+}
+.person-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+/* メッセージ表示部分 */
+.message-area {
+    position: absolute;
+    top: 69%;
+    left: 5%;
+    width: 90%;
+    height: 30%;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 3px double #9a9a96;
+    text-align: center;
+    font-family: "DotGothic16", sans-serif;
+    font-size: 24px;
+    line-height: 0.8em;
+    
+}
+
+.message-name{
+    width: 480px;
+    padding: 16px;
+    font-size: 28px;
+}
+
+.message-txt {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    letter-spacing: 0.03em;
+    line-height: 1.5;
+    color: #222222;
+}
+
+/* 選択肢 */
+.choice-area{
+    width: 720px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 8px; */
+}
+
+.choice-btn{
+    position: relative;
+    /* top: -80px; */
+    /* left: 0%; */
+    /* width: 360px; */
+    padding: 10px 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+/* 次へ引くボタン */
+.next-btn {
+    position: absolute;
+    bottom: 5%;
+    right: 7%;
+    display: block;
+    width: 100px;
+    padding: 20px 10px;
+    font-size: 30px;
+    border: 0;
+    background: #ffffff00;
+    color: #c85ed8;
+    cursor: pointer;
+}
+.next-btn:hover{
+    color: #8e259e;
+}
+

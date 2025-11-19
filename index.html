@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>デビルぱにっく</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&family=UoqMunThenKhung&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ゲーム画面 -->
+    <div class="main-wrapper">
+        <!-- スタート画面 -->
+        <div id="start-wrapper" class="start-wrapper">
+            <p class="logo"><img src="images/logo.png" alt="ロゴ" class="logo__img"></p>
+            <button id="start-btn" class="start-btn">スタート</button>
+            <p class="start-txt">音楽：こんとどぅふぇ 様 HiLi</p>
+            <p class="start-txt">創作堂さくら紅葉 様</p>
+            <p class="music-icon"><a href="	https://yukizakura.net/" target="blank" class="music-link"><img src="images/music.gif" alt="創作堂さくら紅葉リンク" class="music-img"></a></p>
+        </div>
+        <!-- 戦闘画面 -->
+        <div class="game-wrapper">
+            <!-- 人物表示部分 -->
+            <div class="person-area">
+                <p class="person-pic"><img src="images/white.png" alt="人物画像" id="person-img" class="person-img"></p>
+            </div>
+            <!-- メッセージ表示部分 -->
+            <div class="message-area">
+                <p id="message-name" class="message-name"></p>
+                <p id="message-txt" class="message-txt"></p>
+            </div>
+            <!-- 選択肢部分 -->
+            <div class="choice-area"></div>
+            <!-- 次へボタン -->
+            <div class="btn-area">
+                <button id="next-btn" class="next-btn">▼</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
